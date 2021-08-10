@@ -26,7 +26,7 @@ installpkg(){ pacman --noconfirm --needed -S "$1" >/dev/null 2>&1 ;}
 error() { echo "ERROR: $1" ; exit 1;}
 
 welcomemsg() { \
-	dialog --title "Welcome!" --msgbox "Auto-Rice CyberPunk Script!\\n\\nThis script will automatically install on Arch linux the CyberPunk ultra minimal theme.\\n\\n-LinuxObserver" 10 60
+	dialog --title "Welcome!" --msgbox "CyberPunk!\\n\\nThis script will automatically install on Arch linux the CyberPunk ultra minimal theme.\\n\\n-LinuxObserver" 10 60
 
 	dialog --colors --title "Important Note!" --yes-label "All ready!" --no-label "Return..." --yesno "Be sure your computer you has current pacman updates and refreshed Arch keyrings.\\n\\nIf it does not, the installation of some programs might fail." 8 70
 	}
